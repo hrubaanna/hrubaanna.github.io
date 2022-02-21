@@ -5,12 +5,6 @@
   font-family: sans-serif;
 }
 
-/*ADD MEDIA QUERIES FOR PHONES
-*/
-@media (max-width: 800px) {
-  /* CSS that should be displayed if width is equal to or less than 800px goes here */
-}
-
 .content {
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
@@ -28,41 +22,87 @@ section {
   scroll-snap-stop: normal;
 }
 
+@media (max-width: 480px) {
+  /*Phones*/
+}
+
+@media (max-width: 1600px) {
+  /*Computers*/
+  .number {
+    font-size: 15em;
+    position: absolute;
+    top: 40px;
+    color: blue;
+  }
+
+  .date {
+    position: absolute;
+    top: 200px;
+    letter-spacing: 2px;
+    color: #eeeeee;
+  }
+
+  .number-title {
+    position: absolute;
+    transform: rotate(-90deg);
+    left: 1%;
+    margin-bottom: -20%;
+    font-size: 5em;
+    color: blue;
+  }
+
+  .authors {
+    position: absolute;
+    transform: rotate(-90deg);
+    right: -20%;
+    width: 50%;
+
+    margin-right: 5%;
+    color: #eeeeee;
+  }
+
+  .author {
+    position: absolute;
+    top: 55px;
+    left: 5%;
+  }
+
+  .title {
+    position: absolute;
+    top: 55px;
+    left: 17%;
+  }
+
+  .text {
+    column-count: 2;
+    column-gap: 50px;
+
+    position: absolute;
+    top: 125px;
+    left: 5%;
+    right: 5%;
+    height: 80%;
+    line-height: 1.4;
+    text-align: justify;
+    text-justify: inter-word;
+    color: #353434;
+  }
+
+  .poem {
+    column-count: 3;
+
+    position: absolute;
+    top: 135px;
+    left: 5%;
+    right: 5%;
+    height: 70%;
+    color: #353434;
+  }
+}
+
 .front-page {
   position: relative;
   background: #8a8635;
-}
-
-.number {
-  font-size: 15em;
-  position: absolute;
-  top: 5%;
-  color: blue;
-}
-
-.date {
-  position: absolute;
-  top: 25%;
-  letter-spacing: 2px;
-  color: #eeeeee;
-}
-
-.number-title {
-  position: absolute;
-  transform: rotate(-90deg);
-  left: 5%;
-  bottom: 20%;
-  font-size: 5em;
-  color: blue;
-}
-
-.authors {
-  position: absolute;
-  transform: rotate(-90deg);
-  right: -20%;
-  width: 50%;
-  margin-right: 5%;
-  color: #eeeeee;
 }
 
 .one {
@@ -70,80 +110,8 @@ section {
   position: relative;
 }
 
-.author {
-  position: absolute;
-  top: 15%;
-  left: 5%;
-}
-
-.title {
-  position: absolute;
-  top: 20%;
-  left: 5%;
-}
-
-.text-left {
-  position: absolute;
-  left: 5%;
-  top: 25%;
-  height: 50%;
-  width: 44%;
-  line-height: 1.6;
-  text-align: justify;
-  text-justify: inter-word;
-  color: #353434;
-}
-
-.text-right {
-  position: absolute;
-  right: 5%;
-  top: 15%;
-  height: 50%;
-  width: 44%;
-  line-height: 1.6;
-  text-align: justify;
-  text-justify: inter-word;
-  color: #353434;
-}
-
-.col-left {
-  position: absolute;
-  left: 15%;
-  top: 25%;
-  height: 50%;
-  width: 30%;
-  color: #353434;
-}
-
-.col-right {
-  position: absolute;
-  right: 15%;
-  top: 25%;
-  height: 50%;
-  width: 30%;
-  color: #353434;
-}
-
 .continue-poem {
   position: relative;
-}
-
-.continue-poem .col-left {
-  position: absolute;
-  left: 15%;
-  top: 15%;
-  height: 50%;
-  width: 30%;
-  color: #353434;
-}
-
-.continue-poem .col-right {
-  position: absolute;
-  right: 15%;
-  top: 15%;
-  height: 50%;
-  width: 30%;
-  color: #353434;
 }
 
 .one hr {
