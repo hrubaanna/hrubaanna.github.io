@@ -103,6 +103,30 @@ section {
   color: var(--content-text);
 }
 
+.dialogue {
+  column-count: 2;
+
+  position: absolute;
+  top: 135px;
+  left: 5%;
+  right: 5%;
+  height: fit-content;
+  color: var(--content-text);
+}
+
+.dialogue-left {
+  text-align: left;
+  text-align: justify;
+  font-style: italic;
+}
+
+.dialogue-right {
+  float: right;
+  text-align: right;
+  text-align: justify;
+  margin-left: 20%;
+}
+
 .front-page {
   position: relative;
   background: #ac993c;
@@ -138,7 +162,12 @@ section {
   position: relative;
 }
 
-@media screen and (max-width: 30em) {
+.six {
+  background: var(--theme-three-color);
+  position: relative;
+}
+
+@media screen and (max-width: 25em) {
   .authors {
     position: absolute;
     transform: rotate(-90deg);
@@ -169,26 +198,123 @@ section {
     font-size: 5em;
   }
 
+  .author,
+  .title,
+  .text,
+  .poem,
+  .dialogue {
+    margin-top: 5em;
+  }
+
   .text {
     column-count: 1;
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 
   .poem {
     column-count: 2;
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 
-  .one,
-  .two,
+  .dialogue {
+    column-count: 1;
+    font-size: 00.9em;
+  }
+
+  .one {
+    height: 300vh;
+  }
+
+  .two {
+    height: 290vh;
+  }
+
   .three,
-  .five,
+  .five {
+    height: 250vh;
+  }
+
+  .four {
+    height: 170vh;
+  }
+
   .six {
+    height: 300vh;
+  }
+}
+
+@media screen and (min-width: 30em) {
+  .authors {
+    position: absolute;
+    transform: rotate(-90deg);
+    left: 8%;
+    width: 500px;
+    font-size: 0.7em;
+  }
+
+  .number {
+    font-size: 7em;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    color: var(--title-blue);
+  }
+
+  .date {
+    position: absolute;
+    top: 23%;
+    left: 30%;
+    font-size: 0.6em;
+    letter-spacing: 2px;
+  }
+
+  .number-title {
+    right: 16%;
+    top: 60%;
+    font-size: 5em;
+  }
+
+  .author,
+  .title,
+  .text,
+  .poem,
+  .dialogue {
+    margin-top: 5em;
+  }
+
+  .text {
+    column-count: 1;
+    font-size: 0.9em;
+  }
+
+  .poem {
+    column-count: 2;
+    font-size: 0.9em;
+  }
+
+  .dialogue {
+    column-count: 1;
+  }
+
+  .one {
+    height: 230vh;
+  }
+
+  .two {
     height: 220vh;
+  }
+
+  .three,
+  .five {
+    height: 200vh;
   }
 
   .four {
     height: 150vh;
+  }
+
+  .six {
+    height: 270vh;
   }
 }
 
@@ -223,9 +349,12 @@ section {
   .one,
   .two,
   .three,
-  .five,
-  .six {
+  .five {
     height: 200vh;
+  }
+
+  .six {
+    height: 220vh;
   }
 
   .four {
@@ -244,13 +373,16 @@ section {
   .one,
   .two,
   .three,
-  .five,
+  .five {
+    height: 130vh;
+  }
+
   .six {
-    height: 150vh;
+    height: 200vh;
   }
 
   .four {
-    height: 120vh;
+    height: 100vh;
   }
 }
 
@@ -260,5 +392,20 @@ section {
     transform: rotate(-90deg);
     left: 65%;
     width: 600px;
+  }
+
+  .one,
+  .two,
+  .three,
+  .five {
+    height: 110vh;
+  }
+
+  .six {
+    height: 190vh;
+  }
+
+  .four {
+    height: 100vh;
   }
 }
