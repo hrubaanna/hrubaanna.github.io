@@ -15,8 +15,6 @@
 }
 
 .content {
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
   height: 100vh;
 }
 
@@ -26,9 +24,6 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  scroll-snap-align: start;
-  scroll-snap-stop: normal;
 }
 
 .number {
@@ -167,7 +162,12 @@ section {
   position: relative;
 }
 
-@media screen and (max-width: 25em) {
+.seven {
+  background: var(--theme-one-color);
+  position: relative;
+}
+
+@media screen and (max-width: 35em) {
   .authors {
     position: absolute;
     transform: rotate(-90deg);
@@ -204,6 +204,7 @@ section {
   .poem,
   .dialogue {
     margin-top: 5em;
+    line-height: 1.4;
   }
 
   .text {
@@ -212,65 +213,68 @@ section {
   }
 
   .poem {
-    column-count: 2;
+    column-count: 1;
     font-size: 0.9em;
   }
 
   .dialogue {
     column-count: 1;
-    font-size: 00.9em;
+    font-size: 0.9em;
   }
 
   .one {
-    height: 300vh;
+    height: 320vh;
   }
 
   .two {
-    height: 290vh;
+    height: 310vh;
   }
 
   .three,
   .five {
-    height: 250vh;
+    height: 270vh;
   }
 
   .four {
-    height: 170vh;
+    height: 680vh;
   }
 
   .six {
-    height: 300vh;
+    height: 370vh;
+  }
+
+  .seven {
+    height: 800vh;
   }
 }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 35em) {
   .authors {
     position: absolute;
     transform: rotate(-90deg);
-    left: 8%;
+    left: 40%;
     width: 500px;
     font-size: 0.7em;
   }
 
   .number {
-    font-size: 7em;
+    font-size: 10em;
     position: absolute;
     top: 15%;
-    left: 30%;
+    left: 45%;
     color: var(--title-blue);
   }
 
   .date {
     position: absolute;
-    top: 23%;
-    left: 30%;
+    top: 27%;
+    left: 45%;
     font-size: 0.6em;
     letter-spacing: 2px;
   }
 
   .number-title {
-    right: 16%;
-    top: 60%;
+    top: 50%;
     font-size: 5em;
   }
 
@@ -280,6 +284,7 @@ section {
   .poem,
   .dialogue {
     margin-top: 5em;
+    line-height: 1.2;
   }
 
   .text {
@@ -294,6 +299,7 @@ section {
 
   .dialogue {
     column-count: 1;
+    font-size: 0.9em;
   }
 
   .one {
@@ -316,49 +322,9 @@ section {
   .six {
     height: 270vh;
   }
-}
 
-@media screen and (min-width: 30em) {
-  .authors {
-    position: absolute;
-    transform: rotate(-90deg);
-    left: 40%;
-    width: 500px;
-  }
-
-  .number {
-    font-size: 10em;
-    position: absolute;
-    top: 40px;
-    color: var(--title-blue);
-  }
-
-  .date {
-    position: absolute;
-    top: 150px;
-    font-size: 0.8em;
-    letter-spacing: 2px;
-  }
-
-  .title {
-    position: absolute;
-    top: 55px;
-    left: 50%;
-  }
-
-  .one,
-  .two,
-  .three,
-  .five {
-    height: 200vh;
-  }
-
-  .six {
-    height: 220vh;
-  }
-
-  .four {
-    height: 150vh;
+  .seven {
+    height: 380vh;
   }
 }
 
@@ -374,15 +340,19 @@ section {
   .two,
   .three,
   .five {
-    height: 130vh;
-  }
-
-  .six {
-    height: 200vh;
+    height: 140vh;
   }
 
   .four {
-    height: 100vh;
+    height: 300vh;
+  }
+
+  .six {
+    height: 240vh;
+  }
+
+  .seven {
+    height: 320vh;
   }
 }
 
@@ -394,18 +364,42 @@ section {
     width: 600px;
   }
 
+  .text {
+    column-count: 1;
+    font-size: 1em;
+  }
+
+  .poem {
+    column-count: 2;
+    font-size: 1em;
+  }
+
+  .dialogue {
+    column-count: 1;
+    font-size: 1em;
+  }
+
   .one,
   .two,
   .three,
   .five {
-    height: 110vh;
-  }
-
-  .six {
-    height: 190vh;
+    height: 140vh;
   }
 
   .four {
-    height: 100vh;
+    height: 330vh;
+  }
+
+  .six {
+    height: 210vh;
+  }
+
+  .seven {
+    height: 330vh;
+  }
+
+  .text {
+    column-count: 2;
+    column-gap: 50px;
   }
 }
