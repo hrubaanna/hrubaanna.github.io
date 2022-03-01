@@ -11,7 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .content {
@@ -46,6 +46,7 @@ section {
   left: 1%;
   margin-bottom: -20%;
   font-size: 5em;
+  font-weight: 400;
   color: var(--title-blue);
 }
 
@@ -62,6 +63,7 @@ section {
   top: 55px;
   left: 5%;
   color: var(--content-text);
+  font-weight: 400;
 }
 
 .title {
@@ -70,6 +72,7 @@ section {
   left: 50%;
   color: var(--content-text);
   text-transform: uppercase;
+  font-weight: 400;
 }
 
 .text {
@@ -113,6 +116,7 @@ section {
   text-align: left;
   text-align: justify;
   font-style: italic;
+  font-weight: 300;
 }
 
 .dialogue-right {
@@ -164,6 +168,11 @@ section {
 
 .seven {
   background: var(--theme-one-color);
+  position: relative;
+}
+
+.eight {
+  background: var(--theme-two-color);
   position: relative;
 }
 
@@ -231,7 +240,8 @@ section {
   }
 
   .three,
-  .five {
+  .five,
+  .eight {
     height: 270vh;
   }
 
@@ -311,7 +321,8 @@ section {
   }
 
   .three,
-  .five {
+  .five,
+  .eight {
     height: 200vh;
   }
 
@@ -339,7 +350,8 @@ section {
   .one,
   .two,
   .three,
-  .five {
+  .five,
+  .eight {
     height: 140vh;
   }
 
@@ -382,7 +394,8 @@ section {
   .one,
   .two,
   .three,
-  .five {
+  .five,
+  .eight {
     height: 140vh;
   }
 
